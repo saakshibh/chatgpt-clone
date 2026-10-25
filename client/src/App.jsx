@@ -6,7 +6,7 @@ import SharedChat from "./components/SharedChat";
 import AuthPage from "./components/AuthPage";
 import { getToken, setToken, clearToken } from "./utils/auth";
 import "./App.css";
-import ResetPage from "./components/ResetPage";
+
 
 const API = import.meta.env.VITE_API_URL;
 const json = { "Content-Type": "application/json" };
@@ -278,7 +278,7 @@ export default function App() {
     clearToken();
     setUser(null);
   };
-  if (window.location.pathname === "/reset-password") return <ResetPage />;
+  
   if (shareMatch) return <SharedChat shareId={shareMatch[1]} />;
   if (checking) return <div className="auth-wrap">Loading...</div>;
   if (!user) return <AuthPage onAuth={onAuth} />;
