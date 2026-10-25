@@ -1,0 +1,9 @@
+/* Light theme shortcut: invert the dark UI, then flip colours back for images */
+html[data-theme="light"] {
+  background: #fff;
+  filter: invert(1) hue-rotate(180deg);
+}
+html[data-theme="light"] img,
+html[data-theme="light"] .avatar {
+  filter: invert(1) hue-rotate(180deg);
+}

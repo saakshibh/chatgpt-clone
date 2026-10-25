@@ -1,0 +1,19 @@
+.search-modal { min-height: 300px; }
+.search-top {
+  display: flex; align-items: center; gap: 12px; padding: 16px 20px;
+  border-bottom: 1px solid #3d3d3d; font-size: 18px;
+}
+.search-top input {
+  flex: 1; background: none; border: none; outline: none; color: #fff; font-size: 16px;
+}
+.search-label { color: #999; font-size: 13px; padding: 8px 8px 4px; }
+.search-row {
+  display: flex; align-items: flex-start; gap: 12px; padding: 10px 8px;
+  border-radius: 10px; cursor: pointer;
+}
+.search-row:hover { background: #363636; }
+.search-row > svg { margin-top: 3px; flex-shrink: 0; font-size: 16px; }
+.search-text { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+.search-title { font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.search-text small { color: #999; font-size: 13px; line-height: 1.4; }
+.search-modal mark { background: #4b3f12; color: #ffd75e; border-radius: 3px; padding: 0 1px; }
